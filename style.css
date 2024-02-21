@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    background-image: url(/image/JAYK5068.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-width: 100%;
+   
+}
+
+.container{
+    width: 550px;
+    padding: 20px 25px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(25px);
+    border:2px solid rgba(255, 255, 255, 0.007);
+    border-radius: 16px;
+}
+
+
+
+
+.name-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.name-box input {
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0 40px;
+    background: #080808;
+    text-transform: capitalize;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border: 2px solid #363d465b;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.name-box input::placeholder {
+    background: linear-gradient(to left, #6889d1, #1f68da, #363d46);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: capitalize;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.name-box button {
+    position: absolute;
+    right: 0;
+    width: 75px;
+    height: 100%;
+    background: linear-gradient(to top, #6889d1, #1f68da, #363d46);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid #363d465b;
+    font-weight: 800;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+
+.name-box i {
+    position: absolute;
+    left: 10px;
+    padding-top: 5px;
+    font-size: 30px;
+    background: linear-gradient(to right, #6889d1, #1f68da, #363d46);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+
+#title{
+    margin-top: 5px;
+    letter-spacing: 2px;
+    background: linear-gradient(to left, #6889d1, #1f68da, #363d46);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+
+.tittle{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #080808;
+    text-transform: capitalize;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.output{
+    text-align: center;
+    margin: 20px ;
+}
+
+.output, .type, #convert-button{
+    visibility: hidden;
+}
+
+.output.active,
+.type.active,
+#convert-button.active {
+    visibility: visible;
+}
+
+.formular p{
+    color: #080808;
+    padding: 1px ;
+    font-size: 25px;
+}
+
+.type{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.degree-field{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+label, label i{
+    background: linear-gradient(to left, #6889d1, #1f68da, #363d46);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.type input, select{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #363d46;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+input:focus{
+    border: 1px solid #363d46;
+}
+option{
+    background: #363d46;
+    color: #1f68da;
+    font-size: 15px;
+}
+
+select{
+    font-size: 15px;
+    background: linear-gradient(to left, #6889d1, #1f68da, #363d46);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+
+.formular{
+    display: flex;
+    padding: 0;
+    
+}
+
+.formular button{
+    padding: 1px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #080808;
+    background: linear-gradient(to left, #6889d1, #1f68da, #363d46);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+   
+    font-weight: 900;
+    text-transform: uppercase;    
+    font-size: 10px;
+    
+}
+
+#convert-button{
+    border: 2px solid #363d46;
+    outline: none;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, #6889d1, #1f68da, #363d46);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 12px 80px;
+    width: 70%;
+    margin: 50px 60px;
+}
+
+#convert-button:hover, .name-box button:hover{
+    border-bottom:2px solid #6889d1;
+    border-top: 2px solid #0a2670;
+    border-left: 2px solid #0a2670;
+    border-right: 2px solid #1f68da;
+    -webkit-text-fill-color: #363d46;
+   
+    
+}
+

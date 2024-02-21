@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>(OASIS)Temparture Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4b1a105400.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="name-box">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="username">
+            <button onclick="showContainer()" type="submit">enter</button>
+        </div>
+        
+        <div id="temperature-converter">
+            <h2 id="title"></h2>
+            
+            <div class="output">
+                <h2 class="tittle">Thermal converter </h2>
+                <div class="formular">
+                    <button>
+                        Formular
+                    </button>
+                    <p> </p>
+                    <p> </p>
+                </div>
+               
+                
+            </div>
+        
+
+            <div class="type">
+                
+                <div id="degree-field">
+                    <label for="degree">°C</label>
+                    <input type="number" name="degree" id="degree">
+
+                    
+                </div>
+                
+            
+                <div class="temp-field">
+                    <label for="temp-type" style="font-size: 15px; font-weight: 900;">°F/°K</label>
+                    <select name="temp-type" id="temp-type">
+                        <option value="#">Select </option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (°K)</option>
+
+                    </select>
+                </div>
+                
+            </div>
+          
+            
+            
+            <div class="convert-btn">
+                <button id="convert-button">convert</button>
+            </div>
+           
+
+        </div>
+
+       
+        
+       
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
